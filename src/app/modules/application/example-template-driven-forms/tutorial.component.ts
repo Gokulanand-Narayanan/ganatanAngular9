@@ -1,0 +1,26 @@
+import { Component, OnInit } from '@angular/core';
+import { Movie } from './movie';
+import { HttpClient } from '@angular/common/http';
+
+@Component({
+  selector: 'app-example-template-driven-forms',
+  templateUrl: './tutorial.component.html',
+  styleUrls: ['./tutorial.component.css']
+})
+export class TutorialComponent implements OnInit {
+
+  movie: Movie = new Movie();
+
+  constructor(private http: HttpClient) {
+    this.movie.name = 'Avengers : Endgame';
+    this.movie.releaseDate = '04/04/2019';
+    this.movie.domestic = '$858,373,000';
+    this.movie.international = '$2,797,800,564';
+    this.movie.worldwide = '$2,797,800,564';
+	
+  }
+
+  ngOnInit() {
+  }
+
+}

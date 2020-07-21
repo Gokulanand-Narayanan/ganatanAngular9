@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AngularStarter</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'YOUR-ID');
+  </script>
+<!-- RUM Header --> 
+<script charset='UTF-8' type='text/javascript'> window['egrum-start_time'] = new Date().getTime(); 
+window['Site_Name'] = '526ff93f-47db-4b3d-9dc2-a55a27f7e5c9-1594184532702'; 
+window['beacon-url'] = 'http://192.168.11.177:7077'; 
+</script> 
+<script src='http://192.168.11.177:7077/rumcollector/egrum.js' async> </script> 
+<!-- RUM Header --> 
+</head> 
+
+<body>
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <script>
+  document.addEventListener("DOMContentLoaded", function(){ 
+               // throw new Error("TypeError");
+}, false);
+//throw new Error("SyntaxError");
+  </script>
+</body>
+
+</html>
